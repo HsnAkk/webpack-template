@@ -15,7 +15,8 @@ module.exports = {
     // Where webpack outputs the assets and bundles
     output: {
         path: path.resolve(__dirname, '../dist'),
-        publicPath: './',
+        publicPath: './',                                   // for real server it should be '/'
+                                                            // for localhost it should be './'
         filename: 'js/[name].[contenthash].bundle.js',
       
     },
